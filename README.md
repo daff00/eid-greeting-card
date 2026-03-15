@@ -68,9 +68,9 @@ eid-card/
 **Prerequisites:** Node.js 18+
 
 ```bash
-# 1. Extract the archive (if downloaded as .tar.gz)
-tar -xzf eid-card-v3.tar.gz
-cd eid-card
+# 1. Clone the repository
+git clone https://github.com/daff00/eid-greeting-card.git
+cd eid-greeting-card
 
 # 2. Install dependencies
 npm install
