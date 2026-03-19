@@ -2,7 +2,7 @@ import { useState, useEffect, type RefObject } from 'react'
 import { motion } from 'framer-motion'
 
 const lines = [
-  { text: 'عيد مبارك', lang: 'arabic', size: 'text-5xl md:text-7xl' },
+  { text: 'عِيدٌ مُبَارَكٌ', lang: 'arabic', size: 'text-5xl md:text-7xl' },
   { text: 'Selamat Hari Raya Idul Fitri', lang: 'id', size: 'text-2xl md:text-4xl' },
   { text: 'تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ', lang: 'arabic', size: 'text-xl md:text-3xl' },
   { text: 'Minal Aidin wal Faizin', lang: 'id', size: 'text-lg md:text-2xl' },

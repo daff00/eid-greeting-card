@@ -25,16 +25,16 @@ export default function ShareDownload({ name }: Props) {
       <div style="border:1px solid rgba(251,191,36,0.4);position:absolute;inset:16px;border-radius:2px;"></div>
       <div style="border:1px solid rgba(251,191,36,0.15);position:absolute;inset:24px;border-radius:2px;"></div>
       <div style="font-size:72px;line-height:1;color:#fbbf24;text-shadow:0 0 30px rgba(251,191,36,0.6);margin-bottom:4px;">☽</div>
-      <div style="font-size:64px;font-weight:400;color:#fbbf24;text-shadow:0 0 24px rgba(251,191,36,0.5);text-align:center;line-height:1.2;direction:rtl;">عيد مبارك</div>
+      <div style="font-size:64px;font-weight:400;color:#fbbf24;text-shadow:0 0 24px rgba(251,191,36,0.5);text-align:center;line-height:1.2;direction:rtl;">عِيدٌ مُبَارَكٌ</div>
       <div style="width:120px;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,0.6),transparent);margin:4px 0;"></div>
       <div style="font-size:28px;font-style:italic;color:#fdf6e3;text-align:center;letter-spacing:0.04em;">Selamat Hari Raya Idul Fitri</div>
-      <div style="font-size:20px;color:rgba(253,230,138,0.8);text-align:center;direction:rtl;">تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ</div>
-      <div style="font-size:18px;font-style:italic;color:rgba(253,246,227,0.6);letter-spacing:0.05em;">Minal Aidin wal Faizin</div>
+      <div style="font-size:28px;color:rgba(253,230,138,0.8);text-align:center;direction:rtl;">تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ صِيَامَنَا وَصِيَامَكُمْ</div>
+      <div style="font-size:24px;font-style:italic;color:rgba(253,246,227,0.6);letter-spacing:0.05em;text-align:center;">Minal Aidin wal Faizin<br>Mohon Maaf Lahir dan Batin</div>
       ${name ? `
         <div style="margin-top:8px;width:80px;height:1px;background:linear-gradient(90deg,transparent,rgba(251,191,36,0.4),transparent);"></div>
         <div style="font-size:16px;letter-spacing:0.3em;text-transform:uppercase;color:rgba(253,230,138,0.7);">— untuk ${name} —</div>
       ` : ''}
-      <div style="position:absolute;bottom:28px;font-size:11px;letter-spacing:0.5em;color:rgba(253,246,227,0.2);text-transform:uppercase;">1 Syawal 1446 H</div>
+      <div style="position:absolute;bottom:28px;font-size:11px;letter-spacing:0.5em;color:rgba(253,246,227,0.2);text-transform:uppercase;margin-bottom: 0.5rem;">1 Syawal 1447 H</div>
     `
     document.body.appendChild(card)
     const canvas = await html2canvas(card, {
@@ -69,8 +69,8 @@ export default function ShareDownload({ name }: Props) {
       const personalizedUrl = url.toString()
 
       const greeting = name
-        ? `عيد مبارك، ${name}! 🌙\nSelamat Hari Raya Idul Fitri!\nMinal Aidin wal Faizin ✨\n\n${personalizedUrl}`
-        : `عيد مبارك 🌙\nSelamat Hari Raya Idul Fitri!\nMinal Aidin wal Faizin ✨\n\n${personalizedUrl}`
+        ? `عِيدٌ مُبَارَكٌ، ${name}! 🌙\nSelamat Hari Raya Idul Fitri!\nMinal Aidin wal Faizin ✨\n\n${personalizedUrl}`
+        : `عِيدٌ مُبَارَكٌ 🌙\nSelamat Hari Raya Idul Fitri!\nMinal Aidin wal Faizin ✨\n\n${personalizedUrl}`
 
       if (navigator.share) {
         // On mobile: try to share card image + personalized URL

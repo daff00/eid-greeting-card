@@ -95,7 +95,7 @@ npm run preview
 
 When a visitor types a name and clicks **Bagikan (Share)**:
 
-- The name is encoded into the URL as a query parameter, e.g. `https://yoursite.com/?nama=Budi`
+- The name is encoded into the URL as a query parameter, e.g. `https://eid-greeting-card-theta.vercel.app/?nama=Budi`
 - On **mobile**, it attempts to share the card as a PNG image file via the Web Share API
 - On **desktop**, the personalized URL is copied to clipboard
 - Anyone who opens the shared link will have the name **auto-filled** from the URL, so the card greets them by name immediately
@@ -141,4 +141,7 @@ The custom Tailwind theme is defined in `tailwind.config.js`:
 
 ---
 
+Music used as the background: <a href="https://pixabay.com/users/lnplusmusic-47631836/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=487552">Andrii Poradovskyi</a> from <a href="https://pixabay.com/music//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=487552">Pixabay</a>
+
+---
 *Taqabbalallahu minna wa minkum — Selamat Hari Raya Idul Fitri 1447 H* ✦
