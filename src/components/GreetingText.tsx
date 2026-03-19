@@ -5,7 +5,8 @@ const lines = [
   { text: 'عِيدٌ مُبَارَكٌ', lang: 'arabic', size: 'text-5xl md:text-7xl' },
   { text: 'Selamat Hari Raya Idul Fitri', lang: 'id', size: 'text-2xl md:text-4xl' },
   { text: 'تَقَبَّلَ اللَّهُ مِنَّا وَمِنْكُمْ', lang: 'arabic', size: 'text-xl md:text-3xl' },
-  { text: 'Minal Aidin wal Faizin', lang: 'id', size: 'text-lg md:text-2xl' },
+  { text: 'Minal Aidin wal Faizin\nMohon Maaf Lahir dan Batin', lang: 'id', size: 'text-lg md:text-2xl' },
+  // { text: 'Mohon Maaf Lahir dan Batin', lang: 'id', size: 'text-lg md:text-2xl' }
 ]
 
 function TypewriterLine({ text, delay, trigger }: { text: string; delay: number; trigger: boolean }) {
@@ -57,7 +58,7 @@ export default function GreetingText({ name, scrollRef }: Props) {
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: i * 0.15, duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
           className={`
-            ${line.size} font-light tracking-wide leading-tight
+            ${line.size} font-light tracking-wide leading-tight whitespace-pre-line
             ${line.lang === 'arabic'
               ? 'font-arabic text-gold-400 text-shadow-gold'
               : 'font-display italic text-cream'}
